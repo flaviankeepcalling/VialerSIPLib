@@ -8,11 +8,11 @@
 #
 
 Pod::Spec.new do |s|
-	s.name             	= "VialerSIPLib"
-	s.version          	= "3.7.3"
-	s.summary          	= "Vialer SIP Library for iOS"
+	s.name             	= "FlavianSIPLib"
+	s.version          	= "1.0.0"
+	s.summary          	= "Flavian SIP Library for iOS"
 	s.description      	= "Objective-C wrapper around PJSIP."
-	s.homepage         	= "https://github.com/VoIPGRID/VialerSIPLib"
+	s.homepage         	= "https://github.com/flaviankeepcalling/VialerSIPLib"
 	s.license          	= 'GNU GPL v3'
 	s.author           	= {"Devhouse Spindle" => "opensource@wearespindle.com"}
 
