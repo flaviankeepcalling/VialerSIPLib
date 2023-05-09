@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	s.license          	= 'GNU GPL v3'
 	s.author           	= {"Devhouse Spindle" => "opensource@wearespindle.com"}
 
-	s.source           	= {:git => "https://github.com/VoIPGRID/VialerSIPLib.git", :tag => s.version.to_s}
+	s.source           	= {:git => "https://github.com/flaviankeepcalling/VialerSIPLib.git", :tag => s.version.to_s}
 	s.social_media_url 	= "https://twitter.com/wearespindle"
 
 	s.platform     		= :ios, '10.0'
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
 	s.resource_bundles  = { 'VialerSIPLib' => 'Pod/Resources/*.wav' }
 
-	s.dependency 'Vialer-pjsip-iOS'
+	s.dependency 'Vialer-pjsip-iOS' :git => "https://github.com/flaviankeepcalling/Vialer-pjsip-iOS.git"
 	s.dependency 'CocoaLumberjack'
     s.dependency 'Reachability'
 end
