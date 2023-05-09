@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/VialerSIPLib.svg?style=flat)](https://opensource.org/licenses/GPL-3.0)
 [![Platform](https://img.shields.io/cocoapods/p/VialerSIPLib.svg?style=flat)](https://cocoapods.org/pods/VialerSIPLib)
 
+This is a test version!!!!!!!
+
 We've created a better wrapper for the PJSIP library. 
 
 Why did we make a new wrapper for the PJSIP library? Previous implementations we found ([Gossip](https://github.com/chakrit/gossip), [Swig](https://github.com/petester42/swig) & [Telephone](https://github.com/eofster/Telephone)) had a primary goal to keep the SIP connection and registration up to date. Because a mobile app is switching networks and connections all the time, it is not possible to keep the SIP registration correct. Since iOS 8, Apple strongly advised to start using VoIP push notification and not to try keep the connection alive all the time. 
