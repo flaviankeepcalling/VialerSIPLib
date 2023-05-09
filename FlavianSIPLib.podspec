@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	s.license          	= 'GNU GPL v3'
 	s.author           	= {"Devhouse Spindle" => "opensource@wearespindle.com"}
 
-	s.source           	= {:git => "https://github.com/flaviankeepcalling/VialerSIPLib.git", :branch => "develop", :tag => s.version.to_s}
+	s.source           	= {:git => "https://github.com/flaviankeepcalling/VialerSIPLib.git", :tag => s.version.to_s}
 
 	s.platform     		= :ios, '10.0'
 	s.requires_arc 		= true
@@ -26,7 +26,10 @@ Pod::Spec.new do |s|
 
 	s.resource_bundles  = { 'VialerSIPLib' => 'Pod/Resources/*.wav' }
 
-	s.dependency 'flavian-sip-test'
+	s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+	s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+	s.dependency 'FlavianSipTest'
 	s.dependency 'CocoaLumberjack'
     s.dependency 'Reachability'
 end
